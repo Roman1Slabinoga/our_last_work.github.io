@@ -35,7 +35,7 @@ header .logo {
 }
 
 header .logo img {
-  width: 190px;
+  width: 150px;
   transform: rotate(62deg);
 }
 
@@ -421,6 +421,11 @@ header nav ul li a:hover {
 
 /* Event Section */
 
+#Events{
+  height: 810px;
+  margin-top: 100px;
+}
+
 .p_our {
   font-family: bold-font;
   text-align: center;
@@ -429,66 +434,59 @@ header nav ul li a:hover {
 .events {
   display: flex;
   justify-content: center;
+  align-items: center;
   font-family: bold-font;
   padding: 20px;
+  height: 100%;
 }
-.events_block1 {
-  padding: 15px;
-
+.events_block {
   border-radius: 10px;
   width: 25%;
-  margin-left: 50px;
-  margin-right: 50px;
-  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  height: auto;
+  overflow: hidden;
+  margin-left: 40px;
+  -webkit-box-shadow: -7px 2px 17px -7px #000000; 
+  box-shadow: -7px 2px 17px -7px #000000; 
+  margin-right: 40px;
+  border-left: 5px solid #67b54f;
 }
-.events_block2 {
-  padding: 15px;
 
-  border-radius: 10px;
-  width: 25%;
-  margin-left: 50px;
-  margin-right: 50px;
-  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-}
-.events_block3 {
-  padding: 15px;
-  border-radius: 10px;
 
-  width: 25%;
-  margin-left: 50px;
-  margin-right: 50px;
-  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+.events_block p{
+  margin: 10px;
 }
-.events_near {
-  display: flex;
-  text-align: center;
-}
+
 .events_near p {
   display: flex;
-  flex: 1;
 }
-.events_near img {
-  display: flex;
-  flex: 2;
+
+
+.date span, .place span {
+  text-decoration: underline;
 }
+
+
+.date, .place {
+  margin-top: 35px !important;
+}
+
 .events_button {
   font-family: bold-font;
-  border-radius: 10px;
-  width: 150px;
-  height: 30px;
+  border-radius: 30px;
+  border-top-left-radius: 0px;;
+  width: 120px;
+  height: 40px;
+  margin: 10px;
   color: #fff;
+  font-size: 23px;
   border: none;
+  transition: 0.2s all;
   background-color: #67b54f;
   outline: none;
+  cursor: pointer;
 }
 .events_button:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .events p {
   font-size: 28px;
@@ -496,7 +494,7 @@ header nav ul li a:hover {
 .events img {
   width: 100%;
   height: auto;
-  max-height: 284px;
+  max-height: 261px;
   background-size: border-box;
 }
 
