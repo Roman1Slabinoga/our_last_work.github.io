@@ -30,11 +30,11 @@
       </div>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Donation</a></li>
-          <li><a href="#">Contacts</a></li>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About">About us</a></li>
+          <li><a href="#Events">Events</a></li>
+          <li><a href="#Donation">Donation</a></li>
+          <li><a href="#Contacts">Contacts</a></li>
         </ul>
       </nav>
     </header>
@@ -261,6 +261,16 @@
             <p>Money for new bus: 40%</p>
           </div>
         </div>
+        <div class="donation-bar">
+          <div class="donation-bar-full">
+            <p>Money for new 30 places: 40%</p>
+          </div>
+        </div>
+        <div class="donation-bar">
+          <div class="donation-bar-full">
+            <p>Money for new room: 40%</p>
+          </div>
+        </div>
       </div>
       <div class="donation-button-container">
         <div id="but-donate" class="donation-button">DONATE</div>
@@ -268,10 +278,34 @@
     </section>
     <!-- Modal Window -->
     <section id="Modal" class="noactive">
-      <div id="cros"><i class="fa fa-close" style="font-size:24px"></i></div>
+      <div id="cros"><i class="fa fa-close"></i></div>
       <div class="modal-container">
         <h2 class="h2m">Card Information</h2>
         <div class="modal-info">
+          <div class="rec">
+            <h3>Name: Taras Balda</h3>
+            <h3>Visa: 2534 2345 1275 4587</h3>
+          </div>
+          <div class="rec">
+            <h3>Name: Taras Balda</h3>
+            <h3>Visa: 2534 2345 1275 4587</h3>
+          </div>
+          <div class="rec">
+            <h3>Name: Taras Balda</h3>
+            <h3>Visa: 2534 2345 1275 4587</h3>
+          </div>
+          <div class="rec">
+            <h3>Name: Taras Balda</h3>
+            <h3>Visa: 2534 2345 1275 4587</h3>
+          </div>
+          <div class="rec">
+            <h3>Name: Taras Balda</h3>
+            <h3>Visa: 2534 2345 1275 4587</h3>
+          </div>
+          <div class="rec">
+            <h3>Name: Taras Balda</h3>
+            <h3>Visa: 2534 2345 1275 4587</h3>
+          </div>
           <div class="rec">
             <h3>Name: Taras Balda</h3>
             <h3>Visa: 2534 2345 1275 4587</h3>
@@ -289,48 +323,34 @@
       </div>
     </section>
     <!-- Contats Section -->
-    <section class="contacts">
+    <section id="Contacts" class="contacts">
       <h2>Our Contacts</h2>
-
-      <div class="contact_wrapper">
+      <div class="contacts_wrapper">
+        <form action="">
+          <p>Ваше ім'я:</p>
+          <input type="text" placeholder="Прізвище ім'я">
+          <p>Ваша почта:</p>
+          <input type="text" placeholder="taras@gmail.com">
+          <p>Запитання і побажання: </p>
+          <textarea name="" id="" cols="30" rows="10" placeholder="Пишіть сюди :)"></textarea>
+          <button>ВІдправити</button>
+        </form>
         <div class="contacts_info">
-          <h2></h2>
-          <p>Якщо є запитання звяжіться з нами</p>
-          <input type="text" name="" id="" placeholder="E-mail" />
-          <p>Запитання і побажання</p>
-          <textarea
-            name=""
-            id=""
-            cols="50"
-            rows="7"
-            placeholder="Ваше повідомлення"
-          ></textarea>
-          <button>Відправ заявку</button>
+          <p>Телефон:</p>
+          <p>+380 96 47 37 737</p>
+          <p>+380 97 47 37 737</p>
+          <p>Графік роботи: Без вихідних</p>
+          <p>Ми в соціальних мережах</p>
+          <div class="contacts_social">
+            <i class="fa fa-youtube-play" style="font-size:24px"></i>
+            <i class="fa fa-instagram" style="font-size:24px"></i>
+            <i class="fa fa-facebook" style="font-size:24px"></i>
+          </div>
         </div>
-        <div class="contacts_right">
-          <p>E-mail</p>
-          <p>Number: 25246426</p>
-          <p>Adress: Patona Street 92A</p>
-        </div>
+      </div>
       </div>
     </section>
     <!-- Footer -->
-    <footer>
-      <h2>Follow Us</h2>
-      <div class="footer_icons">
-        <ion-icon name="logo-twitter"></ion-icon>
-        <ion-icon name="logo-twitter"></ion-icon>
-        <ion-icon name="logo-twitter"></ion-icon>
-        <ion-icon name="logo-twitter"></ion-icon>
-        <ion-icon name="logo-twitter"></ion-icon>
-      </div>
-      <div class="footer_text">
-        <p>Lorem ipsum dolor sit.</p>
-        <p>Lorem ipsum dolor sit.</p>
-        <p>Lorem ipsum dolor sit.</p>
-      </div>
-      <img src="img/logo cnc.png" alt="img" />
-    </footer>
     <!-- Script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
@@ -338,11 +358,11 @@
   </body>
   <!-- JavaScript Code -->
   <script>
-    var element = document.getElementById("modal");
+    var element = document.getElementById("Modal");
 
     document.getElementById("but-donate").addEventListener("click", function() {
       console.log(element);
-      element.classList = "active";
+      element.classList = "";
       return false;
     });
 
