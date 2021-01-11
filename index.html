@@ -60,7 +60,7 @@
                       <p>Пожертвував:</p>
                     </div>
                   </div>
-                  <p class="dolar">2000$</p>
+                  <p class="dolar">2000 грн</p>
                 </div>
                 <div class="user">
                   <div class="info_about_user">
@@ -72,7 +72,7 @@
                       <p>Пожертвував:</p>
                     </div>
                   </div>
-                  <p class="dolar">1250$</p>
+                  <p class="dolar">1250 грн</p>
                 </div>
               </div>
             </div>
@@ -97,7 +97,7 @@
                       <p>Пожертвував:</p>
                     </div>
                   </div>
-                  <p class="dolar">2000$</p>
+                  <p class="dolar">2000 грн</p>
                 </div>
                 <div class="user">
                   <div class="info_about_user">
@@ -109,7 +109,7 @@
                       <p>Пожертвував:</p>
                     </div>
                   </div>
-                  <p class="dolar">1250$</p>
+                  <p class="dolar">1250 грн</p>
                 </div>
               </div>
             </div>
@@ -134,7 +134,7 @@
                       <p>Пожертвував:</p>
                     </div>
                   </div>
-                  <p class="dolar">2000$</p>
+                  <p class="dolar">2000 грн</p>
                 </div>
                 <div class="user">
                   <div class="info_about_user">
@@ -146,7 +146,7 @@
                       <p>Пожертвував:</p>
                     </div>
                   </div>
-                  <p class="dolar">1250$</p>
+                  <p class="dolar">1250 грн</p>
                 </div>
               </div>
             </div>
@@ -159,7 +159,7 @@
     </section>
     <!-- About Section -->
     <section id="About">
-      <h2 class="about-h2">About Us</h2>
+      <h2 class="about-h2">Про нас</h2>
       <div class="about-contain">
         <div class="about-img">
           <img
@@ -211,7 +211,7 @@
       </div>
     <!-- Events Section -->
     <section id="Events">
-      <h2 class="p_our">Our Events</h2>
+      <h2 class="p_our">Наші події</h2>
       <div class="events">
         <div class="events_block">
           <div class="events_near">
@@ -223,7 +223,7 @@
           </p>
           <p class="date">Дата проведення:   <span>23 березня</span></p>
           <p class="place">Місце проведення: <span>Палац потоцьких</span></p>
-          <button class="events_button">Приєднатися</button>
+          <button class="events_button" id="modal"> Приєднатися</button>
         </div>
         <div class="events_block">
           <div class="events_near">
@@ -235,7 +235,7 @@
           </p>
           <p class="date">Дата проведення:   <span>23 березня</span></p>
           <p class="place">Місце проведення: <span>Палац потоцьких</span></p>
-          <button class="events_button">Приєднатися</button>
+          <button class="events_button" id="modal">Приєднатися</button>
         </div>
         <div class="events_block">
           <div class="events_near">
@@ -247,14 +247,14 @@
           </p>
           <p class="date">Дата проведення:   <span>23 березня</span></p>
           <p class="place">Місце проведення: <span>Палац потоцьких</span></p>
-          <button class="events_button">Приєднатися</button>
+          <button class="events_button" id="modal">Приєднатися</button>
         </div>
       </div>
     </section>
     </section>
     <!-- Donation Section -->
     <section id="Donation">
-      <h2 class="donation-h2">Help Us</h2>
+      <h2 class="donation-h2">Допоможіть нам</h2>
       <div class="donation-bar-container">
         <div class="donation-bar">
           <div class="donation-bar-full">
@@ -273,7 +273,8 @@
         </div>
       </div>
       <div class="donation-button-container">
-        <div id="but-donate" class="donation-button">DONATE</div>
+        <a><div id="but-donate" class="donation-button">Допомогти</div></a>
+        <a href="shop.html"><div id="but-donate" class="donation-button" >Наші товари</div></a>
       </div>
     </section>
     <!-- Modal Window -->
@@ -322,9 +323,35 @@
         <p class="modal-p">Навіть маленький внесок може змінити життя</p>
       </div>
     </section>
+
+    <section id="Modal2" class="noactive">
+      <div id="cros2"><i class="fa fa-close"></i></div>
+      <div class="modal2-container">
+        <div class="left">
+          <div class="modal_item">
+            <div class="img">
+             <img src="img/event3.jpg" alt="">
+            </div>
+             <div class="modal_description">
+               <h2>Яка ціль цієї події?</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem et rem delectus eveniet animi suscipit praesentium omnis ex eius quos.</p>
+             </div>
+          </div>
+        </div>
+        <div class="right">
+          <form action="">
+            <p>Ваше ім'я:</p>
+            <input type="text" placeholder="Прізвище ім'я">
+            <p>Ваша почта:</p>
+            <input type="text" placeholder="taras@gmail.com">
+            <button>Записатись</button>
+          </form>
+        </div>
+      </div>
+    </section>
     <!-- Contats Section -->
     <section id="Contacts" class="contacts">
-      <h2>Our Contacts</h2>
+      <h2>Зв'яжіться з нами</h2>
       <div class="contacts_wrapper">
         <form action="">
           <p>Ваше ім'я:</p>
@@ -359,10 +386,23 @@
   <!-- JavaScript Code -->
   <script>
     var element = document.getElementById("Modal");
+    var element2 = document.getElementById("Modal2");
 
     document.getElementById("but-donate").addEventListener("click", function() {
       console.log(element);
       element.classList = "";
+      return false;
+    });
+
+    document.getElementById("modal").addEventListener("click", function() {
+      console.log(element);
+      element2.classList = "";
+      return false;
+    });
+
+    document.getElementById("cros2").addEventListener("click", function() {
+      console.log(element);
+      element2.classList = "noactive";
       return false;
     });
 

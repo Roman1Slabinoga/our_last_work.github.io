@@ -1,0 +1,91 @@
+.shop{
+    width: 80%;
+    height: 750px;
+    margin: 10px auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    //border-right: 4px solid #67b54f;
+    //border-left: 4px solid #67b54f;
+    -webkit-box-shadow:  0px 0px 58px -40px #000000;; 
+    box-shadow: 0px 0px 58px -40px #000000;
+    .item_wrapper{
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+        height: 95%;
+        margin: 0 auto;
+        .item{
+            width: 300px;
+            height: 400px;
+            border-radius: 17px;
+            padding: 20px;
+            border: 1px solid #58585821;
+            align-items: flex-start;
+            display: flex;
+            flex-direction: column;
+            .item_photo{
+                width: 200px;
+                border: 3px solid rgb(229,251,82);
+                height: 200px;
+                border-radius: 67%;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+                img{
+                    width: 200px;
+                    height: auto;
+                }
+            }
+            .description{
+                font-size: 21px;
+                width: 100%;
+                margin-top: 9px;
+                font-family: 'bold-font';
+                height: auto;
+                h3{
+                    font-size: 38px;
+                    text-align: center;
+                }
+                .slogan{
+                    text-align: center;
+                    font-size: 26px;
+                    margin-top: 17px;
+                }
+                .item_user_name{
+                    text-align: center;
+                    color: #67b54f;
+                    font-size: 26px;
+                }
+            }
+            .item_buy{
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: 34px;
+                p{
+                    font-family: 'bold-font';
+                    font-size: 28px;
+                }
+                button{
+                    border-radius: 10px;
+                    background-color: #67b54f;
+                    color: white;
+                    width: 98px;
+                    height: 37px;
+                    border: none;
+                    cursor: pointer;
+                    font-family: Arial, Helvetica, sans-serif;
+                    transition: 0.1s;
+                    font-size: 15px;
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+

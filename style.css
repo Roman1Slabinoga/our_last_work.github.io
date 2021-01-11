@@ -22,6 +22,19 @@ header nav ul,
   justify-content: center;
 }
 
+.header_shop{
+  width: 80%;
+  height: 144px;
+  margin: 0 auto;
+  display: flex;
+  font-family: bold-font;
+  border-bottom: 4px solid #67b54f;
+  -webkit-box-shadow: 0px 2px 7px 3px rgba(0,0,0,0.72);
+  box-shadow: -1px 0px 33px -17px rgba(0,0,0,0.72);
+  border-radius: 17px;
+}
+
+
 /* Header */
 
 header {
@@ -55,6 +68,12 @@ header nav {
 header nav ul li {
   margin: 23px;
   font-size: 26px;
+}
+
+.shop_number{
+  width: 20%;
+  height: auto;
+  font-size: 25px;
 }
 
 header nav ul li a {
@@ -232,7 +251,9 @@ header nav ul li a:hover {
 .user .info_about_user .logo img {
   width: 100%;
   height: 100%;
+  opacity: 0.4;
 }
+
 .news_about_events1 h3 {
   margin-left: 60px;
   position: relative;
@@ -334,7 +355,17 @@ header nav ul li a:hover {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.donation-button-container a{
+   text-decoration: none;
+}
 
+.donation-button-container{
+  display: flex;
+  width: 516px;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  height: auto;
+}
 
 .donation-button {
   border-radius: 10px;
@@ -373,7 +404,7 @@ header nav ul li a:hover {
   font-family: bold-font;
 }
 
-#Modal {
+#Modal,  #Modal2{
   position: fixed;
   top: 0;
   bottom: 0;
@@ -385,24 +416,121 @@ header nav ul li a:hover {
   align-items: center;
 }
 
-.modal-container {
+.modal-container, .modal2-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   position: relative;
   background-color: white;
   font-family: Arial, Helvetica, sans-serif;
   color: black;
   border-radius: 15px;
-  width: 807px;
-  border-top: 3px solid #67b54f;
-  border-bottom: 3px solid #67b54f;
-  height: 515px;
-  padding: 15px;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  border-top: 3px solid #67b54f;
+  border-bottom: 3px solid #67b54f;
+  padding: 15px;
+}
+
+.modal2-container{
+  width: 760px;
+  height: 488px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+/* Modal 2 */
+
+.modal2-container .left{
+  width: 50%;
+}
+
+.modal2-container .right{
+  width: 47%;
+  height: 94%;
+  padding: 10px;
+  border-left: 3px solid #2d2c2c0a;
+}
+
+.modal2-container .right form input{
+  width: 302px;
+  height: 35px;
+  font-size: 16px;
+  margin-top: 20px;
+  border-radius: 16px;
+  border: none;
+  padding-left: 20px;
+  outline: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-box-shadow: 0px -1px 6px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px -1px 6px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px -1px 6px 0px rgba(34, 60, 80, 0.2);
+}
+
+.modal2-container .right form p{
+  font-size: 27px;
+  font-family: 'bold-font';
+  margin-top: 20px;
+}
+
+.modal2-container .right form button{
+  margin-top: 30px;
+  width: 115px;
+  height: 40px;
+  border-radius: 27px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.modal_item{
+  width: 100%;
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 474px;
+}
+
+
+.modal2-container  .left img{
+  width: 100%;
+}
+
+.modal2-container  .left .modal_item .img{
+  width: 92%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.modal_description{
+  width: 348px;
+  height: 210px;
+}
+
+.left h2{
+  font-size: 26px;
+  font-family: 'bold-font';
+  margin-top: 9px;
+}
+
+
+.left p{
+  font-size: 26px;
+  margin-top: 15px;
+  font-family: 'bold-font';
+}
+
+
+/* /-----/ */
+.modal-container {
+  width: 807px;
+  height: 515px;
 }
 
 .noactive {
@@ -433,6 +561,7 @@ header nav ul li a:hover {
   width: 100%;
   text-align: center;
 }
+
 .modal-container h2 {
   font-size: 40px;
 }
@@ -441,7 +570,7 @@ header nav ul li a:hover {
   margin: 10px;
 }
 
-#cros {
+#cros, #cros2 {
   position: absolute;
   top: 23%;
   cursor: pointer;
@@ -449,13 +578,13 @@ header nav ul li a:hover {
   z-index: 2;
 }
 
-#cros i {
+#cros2 i, #cros i {
   color: #6ec553;
   font-size: 29px;
   transition: 0.5s;
 }
 
-#cros i:hover{
+#cros2 i:hover, #cros i:hover{
   transform: rotate(180deg);
 }
 
